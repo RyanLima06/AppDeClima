@@ -92,7 +92,7 @@ public class App {
                 System.out.println("deseja continuar usando a aplicacao? (S/N)");
                 respostaContinuacao = value.nextLine();
 
-        } while (!respostaContinuacao.toUpperCase(Locale.ROOT).equals("N"));
+        } while (!respostaContinuacao.toUpperCase(Locale.ROOT).equals("N") && respostaContinuacao.toUpperCase(Locale.ROOT).equals("S"));
 
         String finalizando = (!respostaCity.contains("latitude")) ? "Tente novamente!" : "Até a próxima";
         System.out.println(finalizando);
